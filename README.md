@@ -1,15 +1,45 @@
 # Proyecto Grupo 3 — MCDI500
 
-Breve descripción de la problemática abordada y del objetivo del análisis
-(2 o 3 frases).
+Buscamos determinar qué cracateristicas observables  de los anuncios están relacionadas con las diferencias de valor y precio. El objetivo es analizar las caracteristicas de los alojamientos publicados , que presntena relacion con el precio por noche publicado , utilizando variables disponibles en el dataset y  tecnicas reporduccibles de analisis de datos. La pregunta que abarca la problematica a nuestro proyecto es:
 
-## Integrantes- Rolando Donoso (@rdonosoguerra94)- Nombre Apellido (@usuario-github)
+¿De qué manera las características del alojamiento, como ubicación, especificaciones y las cualidades del anfitrión se relacionan con el precio por noche listado en Airbnb en Santiago?
+
+
+## Integrantes- Rolando Donoso (@rdonosoguerra94) - Alfredo Abraham (@Alfredoabraham) - Felipe Gutiérrez Castro (@Felipe-I-GC)- Christian Vasquez (@cristian2779cucho)
 
 ## Datos
 
-Fuente del conjunto, licencia o condiciones de uso, número de registros y
-variables. Si el conjunto no está versionado: dónde descargarlo y en qué
-carpeta colocarlo.
+### Fuente y descripción del conjunto de datos
+
+El conjunto de datos utilizado en este proyecto corresponde a alojamientos de **Airbnb en Santiago de Chile**. Los datos fueron obtenidos desde **Inside Airbnb**, plataforma que proporciona datos públicos sobre alojamientos de Airbnb para distintas ciudades del mundo.
+
+### Fuente
+
+- **Fuente:** Inside Airbnb
+- **Ciudad:** Santiago, Chile
+- **Archivo:** `listings.csv.gz`
+- **Formato:** CSV comprimido en GZIP
+- **Página de descarga:** [Inside Airbnb – Get the Data](https://insideairbnb.com/es/get-the-data/)
+- **Licencia:** Creative Commons Attribution 4.0 International (CC BY 4.0)
+
+### Características del conjunto de datos
+
+El conjunto de datos utilizado contiene:
+
+- **Registros:** 18.534
+- **Variables:** 90
+
+Las variables contienen información relacionada con los alojamientos, anfitriones, ubicación, características de las propiedades, precios, disponibilidad y evaluaciones, entre otros atributos.
+
+### Descarga y almacenamiento
+
+El conjunto de datos no se encuentra versionado dentro del repositorio mediante Git. Para reproducir el análisis, el archivo puede descargarse desde la página oficial de Inside Airbnb:
+
+[Inside Airbnb – Get the Data](https://insideairbnb.com/es/get-the-data/)
+
+Una vez descargado, el archivo debe ubicarse en:
+
+data/raw/listings.csv.gz
 
 ## Estructura del repositorio
 
