@@ -39,7 +39,6 @@ El conjunto de datos no se encuentra versionado dentro del repositorio mediante 
 
 Una vez descargado, el archivo debe ubicarse en:
 
-```text
 data/raw/listings.csv.gz
 
 ## Estructura del repositorio
