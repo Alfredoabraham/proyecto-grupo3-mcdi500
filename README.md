@@ -9,9 +9,38 @@ Buscamos determinar qué cracateristicas observables  de los anuncios están rel
 
 ## Datos
 
-Fuente del conjunto, licencia o condiciones de uso, número de registros y
-variables. Si el conjunto no está versionado: dónde descargarlo y en qué
-carpeta colocarlo.
+### Fuente y descripción del conjunto de datos
+
+El conjunto de datos utilizado en este proyecto corresponde a alojamientos de **Airbnb en Santiago de Chile**. Los datos fueron obtenidos desde **Inside Airbnb**, plataforma que proporciona datos públicos sobre alojamientos de Airbnb para distintas ciudades del mundo.
+
+### Fuente
+
+- **Fuente:** Inside Airbnb
+- **Ciudad:** Santiago, Chile
+- **Archivo:** `listings.csv.gz`
+- **Formato:** CSV comprimido en GZIP
+- **Página de descarga:** [Inside Airbnb – Get the Data](https://insideairbnb.com/es/get-the-data/)
+- **Licencia:** Creative Commons Attribution 4.0 International (CC BY 4.0)
+
+### Características del conjunto de datos
+
+El conjunto de datos utilizado contiene:
+
+- **Registros:** 18.534
+- **Variables:** 90
+
+Las variables contienen información relacionada con los alojamientos, anfitriones, ubicación, características de las propiedades, precios, disponibilidad y evaluaciones, entre otros atributos.
+
+### Descarga y almacenamiento
+
+El conjunto de datos no se encuentra versionado dentro del repositorio mediante Git. Para reproducir el análisis, el archivo puede descargarse desde la página oficial de Inside Airbnb:
+
+[Inside Airbnb – Get the Data](https://insideairbnb.com/es/get-the-data/)
+
+Una vez descargado, el archivo debe ubicarse en:
+
+```text
+data/raw/listings.csv.gz
 
 ## Estructura del repositorio
 
