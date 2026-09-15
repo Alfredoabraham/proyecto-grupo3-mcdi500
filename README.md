@@ -1,9 +1,11 @@
 # Proyecto Grupo 3 — MCDI500
 
-Breve descripción de la problemática abordada y del objetivo del análisis
-(2 o 3 frases).
+Buscamos determinar qué cracateristicas observables  de los anuncios están relacionadas con las diferencias de valor y precio. El objetivo es analizar las caracteristicas de los alojamientos publicados , que presntena relacion con el precio por noche publicado , utilizando variables disponibles en el dataset y  tecnicas reporduccibles de analisis de datos. La pregunta que abarca la problematica a nuestro proyecto es:
 
-## Integrantes- Rolando Donoso (@rdonosoguerra94)- Nombre Apellido (@usuario-github)
+¿De qué manera las características del alojamiento, como ubicación, especificaciones y las cualidades del anfitrión se relacionan con el precio por noche listado en Airbnb en Santiago?
+
+
+## Integrantes- Rolando Donoso (@rdonosoguerra94)- Alfredo Abraham (@Alfredoabraham)
 
 ## Datos
 
