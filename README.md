@@ -1,6 +1,6 @@
 # Proyecto Grupo 3 — MCDI500
 
-Buscamos determinar qué cracateristicas observables  de los anuncios están relacionadas con las diferencias de valor y precio. El objetivo es analizar las caracteristicas de los alojamientos publicados , que presntena relacion con el precio por noche publicado , utilizando variables disponibles en el dataset y  tecnicas reporduccibles de analisis de datos. La pregunta que abarca la problematica a nuestro proyecto es:
+Buscamos determinar qué caracteristicas observables  de los anuncios de Airbnb , están relacionadas con las diferencias de valor y precio. El objetivo es analizar las caracteristicas de los alojamientos publicados , que presntena relacion con el precio por noche publicado , utilizando variables disponibles en el dataset y  tecnicas reporduccibles de analisis de datos. La pregunta que abarca la problematica a nuestro proyecto es:
 
 ¿De qué manera las características del alojamiento, como ubicación, especificaciones y las cualidades del anfitrión se relacionan con el precio por noche listado en Airbnb en Santiago?
 
@@ -101,9 +101,19 @@ Ejecutar los notebooks en orden desde la raíz del proyecto.
 Prefijos usados: docs, data, feat, fix.
 
 ## Decisiones técnicas
+Decisiones técnicas
 
-Registro breve de las decisiones relevantes y su motivo.
-Ejemplo: "Se imputa la edad con la mediana en lugar de eliminar registros,
-porque los NA representan el 12% de la muestra y su eliminación sesgaría
-la distribución por región."
+Durante el desarrollo de la Fase 2 se adoptaron decisiones técnicas orientadas a garantizar un proceso de análisis reproducible, trazable y coherente con la problemática definida en la Fase 1.
+
+En primer lugar, se utilizó Python como lenguaje principal de programación y Jupyter Notebook como entorno de trabajo, debido a que permiten integrar código, resultados, visualizaciones y documentación narrativa dentro de un mismo flujo de análisis. Para el tratamiento de los datos se emplearon principalmente bibliotecas como pandas y NumPy, mientras que las herramientas de visualización se utilizaron para apoyar la exploración y validación de los resultados.
+
+El conjunto de datos original de Inside Airbnb Santiago se mantuvo sin modificaciones en la carpeta data/raw. Esta decisión permite conservar una fuente de datos original e inalterada y realizar todas las operaciones de limpieza y transformación mediante código, evitando modificaciones manuales que puedan dificultar la reproducción del análisis.
+
+La selección de variables se realizó considerando su relación directa con la pregunta de investigación: ¿Qué comunas y tipos de alojamiento Airbnb ofrecen alternativas accesibles y adecuadas para estadías temporales de una o dos personas en Santiago? Por esta razón, se priorizaron variables relacionadas con ubicación, tipo de alojamiento, precio, capacidad, disponibilidad y evaluaciones, descartando aquellas que no aportaban directamente al objetivo del estudio.
+
+Durante la etapa de preparación y limpieza de los datos se realizó inicialmente un filtro de variables, seleccionando aquellas que resultaban pertinentes para responder la pregunta de investigación y cumplir con los objetivos definidos. Posteriormente, se efectuó un análisis exploratorio de las variables seleccionadas, revisando su estructura, tipos de datos, distribución, valores nulos, registros duplicados y posibles valores atípicos.
+
+A partir de esta revisión, se llevó a cabo la limpieza de las variables, identificando y tratando datos no válidos, inconsistentes o ausentes según las características de cada variable. En particular, las variables monetarias fueron transformadas a un formato numérico adecuado para facilitar los cálculos, comparaciones y análisis posteriores. Finalmente, las decisiones relacionadas con el filtrado, eliminación, conservación o transformación de los datos fueron documentadas con el propósito de mantener la trazabilidad y reproducibilidad del proceso de análisis.
+
+
 
