@@ -7,7 +7,6 @@ accommodates,ordinal,Nro de huespedes,int64,16,0.0
 bathrooms,ordinal,Nro de baños,float64,27,9.4
 bedrooms,ordinal,Nro de habitaciones,float64,22,12.6
 beds,ordinal,Nro de camas,float64,25,5.5
-amenities,nominal, cualidades y ofrecimientos,str,17229,0.0
 price_quote_price_per_night,objetivo,Precio por noche,float64,10856,4.6
 number_of_reviews,ordinal,Nro de reseñas,int64,449,0.0
 review_scores_rating,continua,1 a 5 reseña,float64,135,17.8

@@ -1,0 +1,11 @@
+clave,valor
+proyecto.nombre,datos airbnb
+proyecto.fase,F2
+proyecto.semilla,42
+datos.archivo,listings.csv.gz
+datos.fuente.plataforma,InsideAirbnb
+datos.fuente.autor,InsideAirbnb
+datos.fuente.url,https://data.insideairbnb.com/chile/rm/santiago/2026-06-29/data/reviews.csv.gz
+decisiones.imputacion.datos_continuos,mediana
+decisiones.escalador,Robust
+decisiones.categoricas,"neighbourhood_cleansed, property_type, room type"
