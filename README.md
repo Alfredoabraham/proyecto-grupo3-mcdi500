@@ -5,7 +5,11 @@ Buscamos determinar qué cracateristicas observables  de los anuncios están rel
 ¿De qué manera las características del alojamiento, como ubicación, especificaciones y las cualidades del anfitrión se relacionan con el precio por noche listado en Airbnb en Santiago?
 
 
+<<<<<<< HEAD
 ## Integrantes- Rolando Donoso (@rdonosoguerra94)- Alfredo Abraham (@Alfredoabraham)
+=======
+## Integrantes- Rolando Donoso (@rdonosoguerra94) - Alfredo Abraham (@Alfredoabraham) - Felipe Gutiérrez Castro (@Felipe-I-GC)- Christian Vasquez (@cristian2779cucho)
+>>>>>>> 4d50ff0d412e30f37ea03b86bca38f69ae870d97
 
 ## Datos
 
