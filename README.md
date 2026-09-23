@@ -61,6 +61,8 @@ proyecto-grupo3-mcdi500/
 ├─ .gitignore         qué queda fuera del control de versiones
 └─ README.md          descripción del proyecto y forma de reproducirlo
 
+### Dentro de la carpeta SRC se creo un archivo temporal , con el objeto de que la estructura definida sea mostrada en el repositorio , cabe mencionar,  que sin este archivo temporal el .gitignore ignora la carpeta src. 
+
 ### Estructura especifica repositorio:
 
 proyecto-grupo3-mcdi500/
