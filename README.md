@@ -46,25 +46,17 @@ data/raw/listings.csv.gz
 
 ### Estructura general del repositorio
 
+```text
 F1/  Definición del problema y entorno reproducible
 F2/  Obtención, limpieza y transformación de datos
 F3/  Núcleo algorítmico: programación estructurada, recursiva y POO
 F4/  Análisis, visualización y comunicación de resultados
-
-proyecto-grupo3-mcdi500/
-├─ data/raw/          datos originales, inmutables
-├─ data/processed/    resultado del preprocesamiento
-├─ notebooks/         análisis documentado por fase
-├─ src/               funciones reutilizables
-├─ docs/              documentación y referencias
-├─ requirements.txt   dependencias con versiones declaradas
-├─ .gitignore         qué queda fuera del control de versiones
-└─ README.md          descripción del proyecto y forma de reproducirlo
+```
 
 ### Dentro de la carpeta SRC se creo un archivo temporal , con el objeto de que la estructura definida sea mostrada en el repositorio , cabe mencionar,  que sin este archivo temporal el .gitignore ignora la carpeta src. 
 
 ### Estructura especifica repositorio:
-
+```text
 proyecto-grupo3-mcdi500/
 ├─ data/
 │ ├─ raw/ # Dataset original, sin modificar
@@ -79,25 +71,38 @@ proyecto-grupo3-mcdi500/
 ├─ requirements.txt # Dependencias y versiones
 ├─ .gitignore # Archivos que no se suben
 └─ .venv/ # Entorno virtual local — no versionar
-
+```
 ## Requisitos y ejecución
 
 Python 3.13
 python -m venv .venv
 source .venv/Scripts/activate
 
-# Windows, Git Bash
+Windows, Git Bash
 
-# .venv\\Scripts\\Activate.ps1     # Windows, PowerShell
+.venv\\Scripts\\Activate.ps1     # Windows, PowerShell
 
-# source .venv/bin/activate      # macOS y Linux
+source .venv/bin/activate      # macOS y Linux
 
 python -m pip install -r requirements.txt
 Ejecutar los notebooks en orden desde la raíz del proyecto.
 
 ## Convención de commits
 
-Prefijos usados: docs, data, feat, fix.
+- `docs` → documentación
+- `data` → datos
+- `feat` → nuevas funcionalidades/análisis
+- `fix` → correcciones
+- `chore` → mantenimiento/configuración
+
+| Tipo | Ejemplo Commits | Explicación |
+|---|---|---|
+| `docs` | `docs: agrega README y definición del problema` | Documenta el proyecto y define el problema de investigación. |
+| `data` | `data: incorpora dataset original en data/raw` | Incorpora el conjunto de datos original en la carpeta `data/raw`. |
+| `feat` | `feat: crea notebook F1 de definición del proyecto` | Incorpora el notebook correspondiente a la definición del proyecto. |
+| `feat` | `feat: implementa exploración inicial de variables` | Realiza una exploración inicial de las variables del conjunto de datos. |
+| `fix` | `fix: corrige tratamiento de valores faltantes` | Corrige el tratamiento de los valores faltantes durante la preparación de los datos. |
+| `chore` | `chore: configura entorno y dependencias del proyecto` | Configura elementos técnicos del proyecto, como el entorno virtual y las dependencias. |
 
 ## Decisiones técnicas
 Decisiones técnicas
