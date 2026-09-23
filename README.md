@@ -2,7 +2,7 @@
 
 Buscamos determinar qué caracteristicas observables  de los anuncios de Airbnb , están relacionadas con las diferencias de valor y precio. El objetivo es analizar las caracteristicas de los alojamientos publicados , que presntena relacion con el precio por noche publicado , utilizando variables disponibles en el dataset y  tecnicas reporduccibles de analisis de datos. La pregunta que abarca la problematica a nuestro proyecto es:
 
-¿De qué manera las características del alojamiento, como ubicación, especificaciones y las cualidades del anfitrión se relacionan con el precio por noche listado en Airbnb en Santiago?
+¿Que caracteristicas observables de los alojamientos ( ubicacion , anfitrion , comuna ,etc.)se relacionan con las diferencias de precio?.
 
 
 ## Integrantes- Rolando Donoso (@rdonosoguerra94) - Alfredo Abraham (@Alfredoabraham) - Felipe Gutiérrez Castro (@Felipe-I-GC)- Christian Vasquez (@cristian2779cucho)
