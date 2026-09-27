@@ -1,3 +1,5 @@
+import numpy as np
+
 class Validacion:
     """Objeto que guarda una tabla de datos y sabe prepararla para el analisis.
 
