@@ -1,0 +1,18 @@
+variable,rol,descripcion,dtype,n_unicos,pct_nulos
+hosts_time_as_host_years,ordinal,numero de años como anfitrion,int64,16,0.0
+neighbourhood_cleansed,nominal,Comuna,str,31,0.0
+property_type,nominal,Tipo de propiedad,str,65,0.0
+room_type,nominal,Habitación o casa/depa entero,str,4,0.0
+accommodates,ordinal,Nro de huespedes,int64,16,0.0
+bathrooms,ordinal,Nro de baños,float64,27,9.4
+bedrooms,ordinal,Nro de habitaciones,float64,22,12.6
+beds,ordinal,Nro de camas,float64,25,5.5
+price_quote_price_per_night,objetivo,Precio por noche,float64,10856,4.6
+number_of_reviews,ordinal,Nro de reseñas,int64,449,0.0
+review_scores_rating,continua,1 a 5 reseña,float64,135,17.8
+review_scores_accuracy,continua,1 a 5 reseña,float64,126,17.8
+review_scores_cleanliness,continua,1 a 5 reseña,float64,150,17.8
+review_scores_checkin,continua,1 a 5 reseña,float64,108,17.8
+review_scores_communication,continua,1 a 5 reseña,float64,126,17.8
+review_scores_location,continua,1 a 5 reseña,float64,129,17.8
+review_scores_value,continua,1 a 5 reseña,float64,132,17.8

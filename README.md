@@ -1,0 +1,123 @@
+# Proyecto Grupo 3 — MCDI500
+
+Buscamos determinar qué caracteristicas observables  de los anuncios de Airbnb , están relacionadas con las diferencias de valor y precio. El objetivo es analizar las caracteristicas de los alojamientos publicados , que presntena relacion con el precio por noche publicado , utilizando variables disponibles en el dataset y  tecnicas reporduccibles de analisis de datos. La pregunta que abarca la problematica a nuestro proyecto es:
+
+¿Que caracteristicas observables de los alojamientos ( ubicacion , anfitrion , comuna ,etc.)se relacionan con las diferencias de precio?.
+
+
+## Integrantes- Rolando Donoso (@rdonosoguerra94) - Alfredo Abraham (@Alfredoabraham) - Felipe Gutiérrez Castro (@Felipe-I-GC)- Christian Vasquez (@cristian2779cucho)
+
+
+## Datos
+
+### Fuente y descripción del conjunto de datos
+
+El conjunto de datos utilizado en este proyecto corresponde a alojamientos de **Airbnb en Santiago de Chile**. Los datos fueron obtenidos desde **Inside Airbnb**, plataforma que proporciona datos públicos sobre alojamientos de Airbnb para distintas ciudades del mundo.
+
+### Fuente
+
+- **Fuente:** Inside Airbnb
+- **Ciudad:** Santiago, Chile
+- **Archivo:** `listings.csv.gz`
+- **Formato:** CSV comprimido en GZIP
+- **Página de descarga:** [Inside Airbnb – Get the Data](https://insideairbnb.com/es/get-the-data/)
+- **Licencia:** Creative Commons Attribution 4.0 International (CC BY 4.0)
+
+### Características del conjunto de datos
+
+El conjunto de datos utilizado contiene:
+
+- **Registros:** 18.534
+- **Variables:** 90
+
+Las variables contienen información relacionada con los alojamientos, anfitriones, ubicación, características de las propiedades, precios, disponibilidad y evaluaciones, entre otros atributos.
+
+### Descarga y almacenamiento
+
+El conjunto de datos no se encuentra versionado dentro del repositorio mediante Git. Para reproducir el análisis, el archivo puede descargarse desde la página oficial de Inside Airbnb:
+
+[Inside Airbnb – Get the Data](https://insideairbnb.com/es/get-the-data/)
+
+Una vez descargado, el archivo debe ubicarse en:
+
+data/raw/listings.csv.gz
+
+## Estructura del repositorio
+
+### Estructura general del repositorio
+
+```text
+F1/  Definición del problema y entorno reproducible
+F2/  Obtención, limpieza y transformación de datos
+F3/  Núcleo algorítmico: programación estructurada, recursiva y POO
+F4/  Análisis, visualización y comunicación de resultados
+```
+
+### Dentro de la carpeta SRC se creo un archivo temporal , con el objeto de que la estructura definida sea mostrada en el repositorio , cabe mencionar,  que sin este archivo temporal el .gitignore ignora la carpeta src. 
+
+### Estructura especifica repositorio:
+```text
+proyecto-grupo3-mcdi500/
+├─ data/
+│ ├─ raw/ # Dataset original, sin modificar
+│ └─ processed/ # Datos limpios y transformados
+├─ F1/
+│ └─ F1\_Definicion.ipynb #notebook donde se definira la problemática
+├─ F2/
+│ └─ F2\_Procesamiento.ipynb #notebook donde se procesarán los datos
+├─ src/ # Funciones reutilizables del pipeline
+├─ docs/ # Diccionario de datos, referencias y decisiones
+├─ README.md # Descripción e instrucciones para ejecutar
+├─ requirements.txt # Dependencias y versiones
+├─ .gitignore # Archivos que no se suben
+└─ .venv/ # Entorno virtual local — no versionar
+```
+## Requisitos y ejecución
+
+Python 3.13
+python -m venv .venv
+source .venv/Scripts/activate
+
+Windows, Git Bash
+
+.venv\\Scripts\\Activate.ps1     # Windows, PowerShell
+
+source .venv/bin/activate      # macOS y Linux
+
+python -m pip install -r requirements.txt
+Ejecutar los notebooks en orden desde la raíz del proyecto.
+
+## Convención de commits
+
+- `docs` → documentación
+- `data` → datos
+- `feat` → nuevas funcionalidades/análisis
+- `fix` → correcciones
+- `chore` → mantenimiento/configuración
+
+| Tipo | Ejemplo Commits | Explicación |
+|---|---|---|
+| `docs` | `docs: agrega README y definición del problema` | Documenta el proyecto y define el problema de investigación. |
+| `data` | `data: incorpora dataset original en data/raw` | Incorpora el conjunto de datos original en la carpeta `data/raw`. |
+| `feat` | `feat: crea notebook F1 de definición del proyecto` | Incorpora el notebook correspondiente a la definición del proyecto. |
+| `feat` | `feat: implementa exploración inicial de variables` | Realiza una exploración inicial de las variables del conjunto de datos. |
+| `fix` | `fix: corrige tratamiento de valores faltantes` | Corrige el tratamiento de los valores faltantes durante la preparación de los datos. |
+| `chore` | `chore: configura entorno y dependencias del proyecto` | Configura elementos técnicos del proyecto, como el entorno virtual y las dependencias. |
+
+## Decisiones técnicas
+Decisiones técnicas
+
+Durante el desarrollo de la Fase 2 se adoptaron decisiones técnicas orientadas a garantizar un proceso de análisis reproducible, trazable y coherente con la problemática definida en la Fase 1.
+
+En primer lugar, se utilizó Python como lenguaje principal de programación y Jupyter Notebook como entorno de trabajo, debido a que permiten integrar código, resultados, visualizaciones y documentación narrativa dentro de un mismo flujo de análisis. Para el tratamiento de los datos se emplearon principalmente bibliotecas como pandas y NumPy, mientras que las herramientas de visualización se utilizaron para apoyar la exploración y validación de los resultados.
+
+El conjunto de datos original de Inside Airbnb Santiago se mantuvo sin modificaciones en la carpeta data/raw. Esta decisión permite conservar una fuente de datos original e inalterada y realizar todas las operaciones de limpieza y transformación mediante código, evitando modificaciones manuales que puedan dificultar la reproducción del análisis.
+
+La selección de variables se realizó considerando su relación directa con la pregunta de investigación: ¿Qué comunas y tipos de alojamiento Airbnb ofrecen alternativas accesibles y adecuadas para estadías temporales de una o dos personas en Santiago? Por esta razón, se priorizaron variables relacionadas con ubicación, tipo de alojamiento, precio, capacidad, disponibilidad y evaluaciones, descartando aquellas que no aportaban directamente al objetivo del estudio.
+
+Durante la etapa de preparación y limpieza de los datos se realizó inicialmente un filtro de variables, seleccionando aquellas que resultaban pertinentes para responder la pregunta de investigación y cumplir con los objetivos definidos. Posteriormente, se efectuó un análisis exploratorio de las variables seleccionadas, revisando su estructura, tipos de datos, distribución, valores nulos, registros duplicados y posibles valores atípicos.
+
+A partir de esta revisión, se llevó a cabo la limpieza de las variables, identificando y tratando datos no válidos, inconsistentes o ausentes según las características de cada variable. En particular, las variables monetarias fueron transformadas a un formato numérico adecuado para facilitar los cálculos, comparaciones y análisis posteriores. Finalmente, las decisiones relacionadas con el filtrado, eliminación, conservación o transformación de los datos fueron documentadas con el propósito de mantener la trazabilidad y reproducibilidad del proceso de análisis.
+
+
+
