@@ -119,5 +119,73 @@ Durante la etapa de preparación y limpieza de los datos se realizó inicialment
 
 A partir de esta revisión, se llevó a cabo la limpieza de las variables, identificando y tratando datos no válidos, inconsistentes o ausentes según las características de cada variable. En particular, las variables monetarias fueron transformadas a un formato numérico adecuado para facilitar los cálculos, comparaciones y análisis posteriores. Finalmente, las decisiones relacionadas con el filtrado, eliminación, conservación o transformación de los datos fueron documentadas con el propósito de mantener la trazabilidad y reproducibilidad del proceso de análisis.
 
+## FASE 3 ##
+
+## Actualización Fase 3 — Programación Orientada a Objetos
+
+Durante la Fase 3 se reorganizó y amplió el procesamiento del proyecto Airbnb Santiago, incorporando conceptos de Programación Orientada a Objetos (POO), modularización, validación y análisis de eficiencia.
+
+### Principales cambios realizados
+
+- Se reorganizó el preprocesamiento mediante una arquitectura basada en **Programación Orientada a Objetos (POO)**.
+- Se integraron los módulos desarrollados en la carpeta `src/`, separando las responsabilidades de carga, limpieza, codificación, escalamiento y validación.
+- Se implementó un **pipeline de transformación**, permitiendo ejecutar secuencialmente las distintas etapas del procesamiento.
+- Se incorporó el patrón **Strategy** para comparar diferentes estrategias de escalamiento.
+- Se compararon `StandardScaler` y `RobustScaler`, manteniendo `RobustScaler` como estrategia utilizada en el pipeline.
+- Se conservó una copia interpretable de los datos (`df_analisis`) antes de aplicar One-Hot Encoding, permitiendo mantener variables categóricas como comuna, tipo de propiedad y tipo de habitación.
+- Se mantuvo sin escalar la variable objetivo `price_quote_price_per_night`.
+- Se incorporó **One-Hot Encoding** para las variables categóricas utilizadas por el modelo de transformación.
+- Se normalizaron nombres de variables generadas durante el proceso de codificación.
+- Se incorporó una clase de **validación** para comprobar la integridad del dataset transformado.
+- Se comparó el resultado de Fase 3 con el dataset procesado generado durante la Fase 2.
+- Se agregaron pruebas de casos límite y manejo de excepciones:
+  - entrada que no corresponde a un DataFrame;
+  - DataFrame vacío;
+  - presencia de valores nulos;
+  - detección de modificaciones respecto del dataset de referencia.
+- Se agregaron verificaciones mediante `assert` para comprobar la ausencia de valores nulos y la conservación de la variable de precio.
+- Se incorporó una visualización mediante **boxplot** para verificar el comportamiento de las variables numéricas escaladas.
+- Se mantuvo la vinculación del procesamiento con la pregunta del proyecto mediante análisis del **precio por comuna y tipo de habitación**.
+- Se incorporó un ejemplo de **herencia**, comparando estrategias de limpieza mediante una clase base y una clase especializada.
+- Se aplicó **recursividad** para transformar metadatos anidados del pipeline en una estructura tabular.
+- Se incorporó la generación y exportación de `metadatos_pipeline_f3.csv`.
+- Se comparó la eficiencia entre un **bucle tradicional** y una **operación vectorizada con pandas/NumPy**, utilizando mediciones de tiempo y memoria.
+- Se incorporó la exportación opcional del dataset final transformado como:
+
+  `Data/Processed/airbnb_f3_poo_transformado.csv`
+
+- Se agregó documentación narrativa en Markdown para explicar cada etapa del notebook.
+- Se incorporaron citas dentro del desarrollo y una sección final de **Bibliografía en formato APA 7**.
+
+Por lo tanto, la arquitectura que está utilizando actualmente F3 es:
+
+proyecto-grupo3-mcdi500/
+│
+├── Data/
+│   ├── Raw/
+│   │   └── listings.csv.gz
+│   │
+│   └── Processed/
+│       ├── airbnb_procesado.csv
+│       └── airbnb_f3_poo_transformado.csv
+│
+├── F1/
+│
+├── F2/
+│
+├── F3/
+│   └── notebooks/
+│       └── F3_S02_POO_Airbnb_Grupo3.ipynb
+│
+├── src/
+│   ├── carga.py
+│   ├── limpieza.py
+│   ├── transformacion.py
+│   └── validacion.py
+│
+├── docs/
+│   └── metadatos_pipeline_f3.csv
+│
+└── README.md
 
 
