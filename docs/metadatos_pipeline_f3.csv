@@ -1,0 +1,14 @@
+clave,valor
+proyecto.nombre,Airbnb Santiago
+proyecto.fase,F3
+datos.archivo,airbnb_f3_poo_transformado.csv
+datos.entrada.filas,18534
+datos.entrada.columnas,90
+datos.base_limpia.filas,17687
+datos.base_limpia.columnas,17
+datos.matriz_transformada.filas,17687
+datos.matriz_transformada.columnas,114
+pipeline.limpieza,LimpiadorAirbnb
+pipeline.pasos,"CodificadorNominal, CodificadorNominal, CodificadorNominal, EscaladorFlexible"
+pipeline.escalamiento,EstrategiaRobust
+pipeline.objetivo,price_quote_price_per_night
