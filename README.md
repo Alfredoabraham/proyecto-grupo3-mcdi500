@@ -158,7 +158,7 @@ Durante la Fase 3 se reorganizó y amplió el procesamiento del proyecto Airbnb 
 - Se incorporaron citas dentro del desarrollo y una sección final de **Bibliografía en formato APA 7**.
 
 Por lo tanto, la arquitectura que está utilizando actualmente F3 es:
-
+```text
 proyecto-grupo3-mcdi500/
 │
 ├── Data/
@@ -187,5 +187,5 @@ proyecto-grupo3-mcdi500/
 │   └── metadatos_pipeline_f3.csv
 │
 └── README.md
-
+```
 
