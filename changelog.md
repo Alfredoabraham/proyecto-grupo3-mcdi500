@@ -1,29 +1,12 @@
----
-jupytext:
-  formats: md:myst
-  text_representation:
-    extension: .md
-    format_name: myst
-    format_version: 0.13
-    jupytext_version: 1.19.5
-kernelspec:
-  name: grupo3_mcdi500
-  display_name: Python (grupo3.mcdi500)
-  language: python
----
-
 # Trazabilidad de mejoras
 
-+++
-
 #### descripción: 
-El documento changelo.md describe los feedbaks que se recibieron a lo largo  del proyecto con sus respectivas fechas y las acciones que se tomaron para mejorarlo.
+El documento changelog.md describe los feedbaks que se recibieron a lo largo  del proyecto con sus respectivas fechas y las acciones que se tomaron para mejorarlo.
 
 #### justificación: 
 
 changelog.md se creo con el objetivo de documentar la trazabilidad de las mejoras y las acciones adoptadas para dichas mejoras, que se realizaron a lo largo de las fases del proyecto.
 
-+++
 
 | Fecha | Observación formativa | Acción de mejora | Evidencia para verificarla |
 |---|---|---|---|
@@ -37,6 +20,4 @@ changelog.md se creo con el objetivo de documentar la trazabilidad de las mejora
 |16/09/2026| El conjunto tiene 90 variables y 18.534 registros; se anticipan faltantes, desbalance y valores extremos. | Seleccionar mediante código las variables pertinentes, documentar el filtro, comparar tratamientos de preprocesamiento y medir su efecto sobre la dispersión. | Código, resultados y decisiones documentadas en notebook e informe. |
 |16/09/2026| Se requiere un historial de trabajo identificable por integrante. | Verificar que los cuatro integrantes puedan hacer *push*, repartir tareas por archivo, trabajar en ramas propias y revisar antes de integrar. | Historial de commits y revisiones por integrante. |
 
-```{code-cell} ipython3
 
-```
