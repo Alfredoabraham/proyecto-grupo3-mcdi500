@@ -1,23 +1,15 @@
 # Trazabilidad de mejoras
-
+    
 #### descripción: 
-El documento changelog.md describe los feedbaks que se recibieron a lo largo  del proyecto con sus respectivas fechas y las acciones que se tomaron para mejorarlo.
-
-#### justificación: 
-
-changelog.md se creo con el objetivo de documentar la trazabilidad de las mejoras y las acciones adoptadas para dichas mejoras, que se realizaron a lo largo de las fases del proyecto.
+El documento changelog.md describe los feedbaks que se recibieron a lo largo  del proyecto con sus respectivas fechas y las acciones que se tomaron para mejorarlo. Su objetivo es documentar la trazabilidad de las mejoras y las acciones adoptadas para dichas mejoras, que se realizaron a lo largo de las fases del proyecto.
 
 
-| Fecha | Observación formativa | Acción de mejora | Evidencia para verificarla |
-|---|---|---|---|
-|22/09/2026| Circulan distintas versiones de la pregunta de investigación; el mapa presenta seis preguntas sin acotar. | Acordar una sola pregunta que pueda responderse con Inside Airbnb y escribirla igual en el informe, README y notebook. Dejar las demás como secundarias. | Pregunta idéntica en los tres archivos y mapa corregido. |
-|22/09/2026| Se afirma sin fuente que no ajustar precios por temporada reduce los ingresos. | Presentar esa afirmación como hipótesis, no como hecho comprobado. | Redacción corregida en el informe. |
-|22/09/2026| El README conserva marcas de conflicto y hay dos versiones del notebook de F2. | Resolver el conflicto, conservar un solo notebook y ejecutarlo completo. | README limpio y notebook único con resultados visibles. |
-|22/09/2026| El código sigue en celdas sueltas; el informe describe lo que se haría, no lo realizado. | Trasladar el código a `src`, comenzando por la función de carga. Reescribir el informe en pasado con cifras de filas, faltantes y tratamientos aplicados. | Carpeta `src` e informe concordante con el notebook ejecutado. |
-|16/09/2026| La reflexión técnica describe actividades, pero no justifica decisiones ni explicita supuestos, alcance y pendientes. | Explicar por qué se eligieron las herramientas, qué supuestos se adoptan, qué queda fuera del alcance y qué decisiones siguen abiertas. | Sección de reflexión técnica revisada. |
-|16/09/2026| El entorno técnico está incompleto. | Incorporar `.gitignore`, establecer la convención de prefijos para commits y documentar el entorno virtual reconstruible con `requirements.txt`. | Archivos, instrucciones e historial del repositorio. |
-|16/09/2026| Ninguno de los diagramas incluye leyenda; el segundo usa comandos como conectores y contiene imprecisiones. | Añadir leyenda a ambos diagramas. Corregir e integrar el segundo con conectores que expresen relaciones, o retirarlo. | Mapa y diagramas corregidos en el entregable. |
-|16/09/2026| El conjunto tiene 90 variables y 18.534 registros; se anticipan faltantes, desbalance y valores extremos. | Seleccionar mediante código las variables pertinentes, documentar el filtro, comparar tratamientos de preprocesamiento y medir su efecto sobre la dispersión. | Código, resultados y decisiones documentadas en notebook e informe. |
-|16/09/2026| Se requiere un historial de trabajo identificable por integrante. | Verificar que los cuatro integrantes puedan hacer *push*, repartir tareas por archivo, trabajar en ramas propias y revisar antes de integrar. | Historial de commits y revisiones por integrante. |
-
+| Fecha de los cambios | Observación formativa | Acción de mejora registrada | Commits relacionados | Justificación |
+|---|---|---|---|---|
+| 09/09/2026–14/09/2026 | El entorno técnico está incompleto. | Se incorporaron .gitignore y requirements.txt y se actualizaron las dependencias.| `e4e9df6`, `6640e54`| Facilitar la gestión de archivos y la reconstrucción del entorno.|
+| 22/09/2026 | Circulan distintas versiones de la pregunta de investigación; el mapa presenta seis preguntas sin acotar. | Se actualizó el README para abordar la coherencia de la pregunta de investigación, según la asociación realizada por el equipo. | `59935e5` | Mantener coherencia entre la pregunta de investigación, las variables seleccionadas y el análisis. |
+| 22/09/2026 | El README conserva marcas de conflicto y hay dos versiones del notebook de F2. | Se corrigieron las carpetas repetidas y las rutas incorrectas del notebook F2. | `ae0b49b` | Evitar duplicidades y permitir ejecutar el notebook desde la ubicación definida en el proyecto. |
+| 23/09/2026–27/09/2026 | El conjunto tiene 90 variables y 18.534 registros; se anticipan faltantes, desbalance y valores extremos. | Se detalló la selección de variables, se corrigió la estandarización y se añadió una comparación de escaladores. Se incorporaron evaluaciones de eficiencia con distintos tamaños de datos y 100 ejecuciones. | `8da3166`, `7951af2`, `03da2df`, `b6d5d36`, `9c279c7` | Fundamentar la selección y transformación de variables y evaluar el rendimiento del procesamiento. |
+| 25/09/2026–27/09/2026 | El código sigue en celdas sueltas; el informe describe lo que se haría, no lo realizado. | Se incorporaron módulos de limpieza, validación, transformación y carga en src/. Se actualizó el README con la arquitectura y los avances de F3. | `36e6540`, `ebb8832`, `b2c60a7`, `d66105f`, `6f44fd5`, `267d250` | Separar responsabilidades, facilitar la reutilización del código y documentar la arquitectura implementada. |
+|01/10/2026| Se requiere un historial de trabajo identificable por integrante. |  Se crea archivo .mailmap para robustecer historial de trabajo indetificable por integrante. |`a0d0861`| Evidenciar la colaboración y la integración del trabajo. El commit demuestra que las identidades de los cuatro integrantes están unificadas. |
 
