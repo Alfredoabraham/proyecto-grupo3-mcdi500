@@ -9,7 +9,7 @@ Thumbs.db
 # Entorno virtual: se reconstruye con requirements.txt
 .venv/
 
-# Caché de Python
+# CachÃ© de Python
 __pycache__/
 *.pyc
 
@@ -27,3 +27,9 @@ desktop.ini
 *.ckpt
 *.pth
 >>>>>>> b6d5d36b3a0ee5fa04f16d868073ded2d0696a3d
+
+# Ignorar archivos procesados
+data/Processed/*.csv
+
+# Conservar resultado final de Fase 3
+!data/Processed/airbnb_f3_poo_transformado.csv
