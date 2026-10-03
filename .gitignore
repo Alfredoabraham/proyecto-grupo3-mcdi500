@@ -28,8 +28,8 @@ desktop.ini
 *.pth
 >>>>>>> b6d5d36b3a0ee5fa04f16d868073ded2d0696a3d
 
-# Ignorar archivos procesados
-data/Processed/*.csv
+# Datos procesados intermedios
+Data/Processed/*.csv
 
-# Conservar resultado final de Fase 3
-!data/Processed/airbnb_f3_poo_transformado.csv
+# Mantener el resultado final de Fase 3
+!Data/Processed/airbnb_f3_poo_transformado.csv
