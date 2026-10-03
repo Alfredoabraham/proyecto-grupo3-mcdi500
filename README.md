@@ -425,3 +425,59 @@ La Fase 4 consolida el proyecto en un flujo completo y reproducible:
 **Datos originales → preprocesamiento → transformación → validación → desarrollo algorítmico → evaluación de eficiencia → análisis → visualización → interpretación de resultados.**
 
 Esta integración permite mantener coherencia entre la problemática planteada, las decisiones técnicas adoptadas, el procesamiento realizado y los resultados obtenidos, dejando una estructura documentada y reproducible dentro del repositorio GitHub.
+### Pregunta principal y respuesta del proyecto
+
+La pregunta principal que orienta el proyecto es:
+
+> **¿Qué características observables de los alojamientos (ubicación, anfitrión, comuna, tipo de alojamiento, entre otras) se relacionan con las diferencias de precio?**
+
+A partir del procesamiento, análisis y visualización de los datos de **Airbnb Santiago**, los resultados indican que las diferencias de precio se encuentran principalmente asociadas con la **ubicación del alojamiento, el tipo de habitación, la capacidad de huéspedes y determinadas características físicas**, como el número de dormitorios, camas y baños.
+
+#### Ubicación y comuna
+
+La ubicación presenta diferencias relevantes en los precios publicados. Al comparar las comunas con mayor representación en los datos, se observan diferencias importantes incluso manteniendo el mismo tipo de habitación.
+
+Por ejemplo, **Lo Barnechea** presenta las mayores medianas entre las comunas comparadas, alcanzando aproximadamente **$165.000 CLP** para habitaciones privadas y **$441.669 CLP** para alojamientos completos. En **Vitacura**, las medianas alcanzan aproximadamente $50.490 y $148.353 CLP, respectivamente, mientras que en **Las Condes** corresponden aproximadamente a $40.365 y $106.129 CLP.
+
+Esto evidencia que la **comuna o ubicación geográfica está asociada con diferencias importantes en el precio por noche**.
+
+#### Tipo de habitación
+
+El tipo de habitación también presenta una asociación clara con el precio.
+
+Las **habitaciones compartidas** presentan la menor mediana de precio, seguidas por las **habitaciones privadas**, los **alojamientos completos** y finalmente las **habitaciones de hotel**, que presentan la mayor mediana dentro de las categorías analizadas.
+
+Además, dentro de las diez comunas seleccionadas, los **alojamientos completos presentan medianas superiores a las habitaciones privadas**, reforzando la asociación entre modalidad de alojamiento y precio.
+
+#### Capacidad de huéspedes
+
+La capacidad del alojamiento constituye otra característica relacionada con el precio.
+
+Los resultados muestran una **tendencia creciente de la mediana del precio entre alojamientos con capacidad para una y nueve personas**. En términos generales, los alojamientos que permiten recibir más huéspedes tienden a presentar precios superiores.
+
+Esta relación también puede observarse al comparar comuna y capacidad simultáneamente. Por ejemplo, para alojamientos destinados a **tres a seis personas**, Lo Barnechea presenta una mediana aproximada de **$369.411 CLP**, frente a **$54.206 CLP en Santiago** y **$45.647 CLP en Estación Central**.
+
+Esto indica que **capacidad y ubicación actúan conjuntamente como características relevantes para describir las diferencias de precio**.
+
+#### Características físicas del alojamiento
+
+El análisis mediante **correlación de Spearman** muestra que las características numéricas con mayor asociación positiva con el precio corresponden principalmente a:
+
+- capacidad de personas;
+- número de dormitorios;
+- número de camas;
+- número de baños.
+
+En consecuencia, los alojamientos con mayor capacidad y mayor cantidad de espacios o equipamiento tienden a presentar precios publicados más altos.
+
+El puntaje asociado a la **ubicación** también presenta una relación positiva con el precio, mientras que el puntaje de **calidad-precio** presenta una asociación negativa, indicando que los alojamientos de menor precio tienden a recibir mejores evaluaciones relativas en esta dimensión.
+
+### Respuesta final
+
+Los resultados permiten concluir que las diferencias de precio observadas en los anuncios analizados de Airbnb Santiago se relacionan principalmente con la **ubicación o comuna, el tipo de habitación, la capacidad de huéspedes y las características físicas del alojamiento, especialmente dormitorios, camas y baños**.
+
+Por lo tanto, el precio publicado no parece depender de una única característica, sino de la combinación de factores territoriales y físicos del alojamiento.
+
+Las visualizaciones muestran, por ejemplo, que alojamientos completos ubicados en comunas como **Lo Barnechea, Vitacura y Las Condes** presentan medianas superiores a las observadas en otras comunas, mientras que una mayor capacidad y disponibilidad de dormitorios, camas y baños también se asocian con precios más elevados.
+
+Estos resultados corresponden a **asociaciones descriptivas** observadas en el conjunto de datos analizado y **no deben interpretarse como relaciones causales**. Además, algunos grupos contienen pocas observaciones, por lo que sus resultados deben interpretarse con cautela.
