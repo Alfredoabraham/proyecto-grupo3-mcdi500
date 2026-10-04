@@ -42,6 +42,28 @@ Una vez descargado, el archivo debe ubicarse en:
 
 data/raw/listings.csv.gz
 
+#### Trazabilidad de los datos procesados
+
+Durante el preprocesamiento del conjunto de datos se generan distintos
+archivos intermedios que permiten representar las etapas de transformación
+aplicadas al dataset original.
+
+Los principales archivos generados son:
+
+| Archivo | Etapa | Control de versiones |
+|---|---|---|
+| `airbnb_procesado.csv` | Primer resultado del procesamiento | Excluido mediante `.gitignore` |
+| `airbnb_procesado_limpieza.csv` | Resultado posterior al proceso de limpieza | Excluido mediante `.gitignore` |
+| `airbnb_procesado_limpieza_y_transformación.csv` | Resultado posterior a limpieza y transformación | Excluido mediante `.gitignore` |
+| `airbnb_f3_poo_transformado.csv` | Resultado del procesamiento implementado mediante POO en Fase 3 | Versionado en Git |
+
+Los archivos intermedios se mantienen localmente en `Data/Processed/`, pero
+se excluyen del repositorio mediante `.gitignore` para evitar versionar
+resultados que pueden ser reproducidos mediante el código del proyecto.
+
+El archivo `airbnb_f3_poo_transformado.csv` se mantiene como resultado final
+de la implementación desarrollada en la Fase 3.
+
 ## Estructura del repositorio
 
 ### Estructura general del repositorio
