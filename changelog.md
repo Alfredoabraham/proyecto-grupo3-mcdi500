@@ -14,5 +14,6 @@ El documento changelog.md describe los feedbaks que se recibieron a lo largo  de
 |01/10/2026| Se requiere un historial de trabajo identificable por integrante. |  Se crea archivo .mailmap para robustecer historial de trabajo indetificable por integrante. |`a0d0861`| Evidenciar la colaboración y la integración del trabajo. El commit demuestra que las identidades de los cuatro integrantes están unificadas. |
 |03/10/2026| El patrón de diseño no está declarado, y lo tienen implementado. |  Se declara en el notebook f4 |`68b7742`| declarar la comparación de patrones permite apoyar los resultados del notebook |
 |03/10/2026|  Tres celdas del notebook de F3 sin ejecutar.| Se eliminan 3 celdas y se ejecuta nuevamente el notebook |`60cc707`| Ejecutar el notebook con contadores continuos |
-
+|03/10/2026| Los datos siguen versionados. El archivo comprimido original más cuatro CSV procesados. declárenlos en el gitignore| se deja solo una version de los datos y se declaran en el .gitignore |`97507c0`, `e5e2999`| Mantener el orden y la limpieza de los datos dentro de la estructura|
+|03/10/2026| documenten en el README cómo obtener los datos ignorados.| se añade sección de trazabilidad de datos dentro del README |`9826701`| Mantener el orden y la limpieza de los archivos de datos dentro de la estructura|
 
