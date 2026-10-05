@@ -62,12 +62,18 @@ proyecto-grupo3-mcdi500/
 │ ├─ raw/ # Dataset original, sin modificar
 │ └─ processed/ # Datos limpios y transformados
 ├─ F1/
-│ └─ F1\_Definicion.ipynb #notebook donde se definira la problemática
+│ └─ notebooks\_Definicion.ipynb #notebook donde se definira la problemática
 ├─ F2/
-│ └─ F2\_Procesamiento.ipynb #notebook donde se procesarán los datos
+│ └─ notebooks\_Procesamiento.ipynb #notebook donde se procesarán los datos
+├─ F3/
+│ └─ notebooks\_POO.ipynb #notebok que contiene núcleo algorítmico
+├─ F4/
+│ └─notebooks\_F4_Consolidado_Proyecto.ipynb #Notebook consolidado muestra visualizaciones y cierre de proyecto
 ├─ src/ # Funciones reutilizables del pipeline
 ├─ docs/ # Diccionario de datos, referencias y decisiones
 ├─ README.md # Descripción e instrucciones para ejecutar
+├─ .mailmap # Unifica los integrantes
+├─ changelog.md # Archivo que documenta trazabilidad de revisiones y sus commits
 ├─ requirements.txt # Dependencias y versiones
 ├─ .gitignore # Archivos que no se suben
 └─ .venv/ # Entorno virtual local — no versionar
